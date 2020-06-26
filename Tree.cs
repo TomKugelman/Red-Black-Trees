@@ -7,6 +7,7 @@ namespace Red_Black_Trees
     {
         public RedBlackNode root = new RedBlackNode("root");
         public bool rootSet = false;
+        public int numOfLeafs = 0;
 
         public void InsertNode(int value)
         {
@@ -61,8 +62,13 @@ namespace Red_Black_Trees
             if (node != null)
             {
                 InOrder(node.leftChild);
-                Console.WriteLine(" | " + node.key.ToString() + " - " + node.color + " | ");
-                
+                // If the node has no parent it is the root
+                if (node.parent == null)
+                    Console.WriteLine(" | " + node.key.ToString() + " - " + node.color + " | - Root");
+                else 
+                    Console.WriteLine(" | " + node.key.ToString() + " - " + node.color);
+                if(node.rightChild == null && node.leftChild == null)
+                    numOfLeafs++;
                 InOrder(node.rightChild);
             }
         }
@@ -152,8 +158,14 @@ namespace Red_Black_Trees
 
         private void Rebalance(RedBlackNode node)
         {
+            
             if (node != null)
             {
+                // Always make sure the root is black. Brute force assigning works here because
+                // this function does not act as if the local parameter is the root like the rotation functions do
+                if (root.Red)
+                    root.SetColor("BLACK");
+
                 if (node.Red)
                 {
                     if (node.parent.Red)

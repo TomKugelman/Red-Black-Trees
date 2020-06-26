@@ -17,10 +17,21 @@ namespace Red_Black_Trees
             RedBlackTree Tree = new RedBlackTree();
 
             // Print the unique numbers before adding to the tree
+            int typeWriterReturn = 10; // modify this variable if your console is hard to read
+            int typeWriterCounter = 0;
             foreach (int index in randomArray)
-                Console.Write("| "+ index + " |");
+                {
+                    // Every nth line (where n = <typeWriterReturn>) return to beginning of line
+                    if (typeWriterCounter == typeWriterReturn)
+                    {
+                        Console.WriteLine();
+                        typeWriterCounter = 0;
+                    }
+                    Console.Write("| "+ index + " ");
+                    typeWriterCounter++;
+                }
 
-            Console.WriteLine();
+            Console.WriteLine("\n");
 
             // Add each unique number to the tree
             for (int index = 0; index < randomArray.Length; index++)
@@ -28,11 +39,14 @@ namespace Red_Black_Trees
                 Tree.InsertNode(randomArray[index]);
             }
 
+            // Display each node as the tree is being traversed
             Tree.InOrder(Tree.root);
 
             // Display number of nodes in the tree
+            // This just verifies the tree is of the correct size to the user
             int numberOfNodes = Tree.NumOfNodes();
-            Console.WriteLine("Number of nodes in the full tree " + numberOfNodes.ToString());
+            Console.WriteLine("\nNumber of nodes in the full tree: " + numberOfNodes.ToString());
+            Console.WriteLine($"There are {Tree.numOfLeafs} leaf nodes (nodes with no children) in this tree");
             Console.WriteLine();
 
             // Prompt user for searchTarget
@@ -42,7 +56,7 @@ namespace Red_Black_Trees
             bool validInput = false;
             while (!validInput)
             {
-                Console.WriteLine("Type a number you'd like to search for");
+                Console.WriteLine("Type a number you'd like to find the minimum and maximum child nodes of.");
                 int searchTarget = Int32.Parse(Console.ReadLine());
 
                 try 
@@ -69,12 +83,12 @@ namespace Red_Black_Trees
 
             for (int i = 0; i < randomArray.Length; i++)
             {
-                //randomArray[i] = random.Next(0, 100);
                 badKey = true;
                 while (badKey)
                 {
                     badKey = false;
-                    randomKey = random.Next(0, 100);
+                    // Make sure the pool of unique numbers is HIGHER than the max size of the array
+                    randomKey = random.Next(0, maxSize + 1);
 
                     for (int j = 0; j < randomArray.Length; j++)
                     {
