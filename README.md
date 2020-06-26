@@ -8,7 +8,7 @@
 > Language: C# .NET Core (Console Application)
 
 ## Description
-This program allows the user to create a Red-Black binary search tree of any size. It also allows the user to search any node in the tree and in return get its smallest and largest child node (following both its subtrees). 
+This program allows the user to create a Red-Black binary search tree of any size. It also allows the user to search any node in the tree and in return get its smallest and largest child node (following both its subtrees). The total number of nodes in the tree as well as the total number of leaf nodes in the tree are also displayed. 
 
 ## Classes
 - RedBlackNode -- A custom NODE class with several class properties such as: leftChild, rightChild, name, color, and two booleans to make some processes easier to type.
