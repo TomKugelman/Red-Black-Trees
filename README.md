@@ -11,7 +11,7 @@
 This program allows the user to create a Red-Black binary search tree of any size. It also allows the user to search any node in the tree and in return get its smallest and largest child node (following both its subtrees). 
 
 ## Classes
-- RedBlackNode -- A custom NODE class with several class properties such as: leftChild, rightChild, name, color, and two booleans to make soem processes easier to type and have less programmer errors.
+- RedBlackNode -- A custom NODE class with several class properties such as: leftChild, rightChild, name, color, and two booleans to make some processes easier to type.
 - RedBlackTree -- A custom class that acts as a Red-Black tree with functions to manipulate the tree as well as traverse and return data.
 - Program -- Handles the main user interactions and serves as a hub for the application.
 
