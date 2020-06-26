@@ -13,6 +13,7 @@ This program allows the user to create a Red-Black binary search tree of any siz
 ## Classes
 - RedBlackNode -- A custom NODE class with several class properties such as: leftChild, rightChild, name, color, and two booleans to make soem processes easier to type and have less programmer errors.
 - RedBlackTree -- A custom class that acts as a Red-Black tree with functions to manipulate the tree as well as traverse and return data.
+- Program -- Handles the main user interactions and serves as a hub for the application.
 
 ### Class Functions
 #### RedBlackNode
@@ -25,7 +26,7 @@ This program allows the user to create a Red-Black binary search tree of any siz
 - FindMin -- Takes 1 integer as an argument and searches the tree for a node with that value, then traverses down its left subtree until it finds a <leftChild> leaf.
 - FindMax -- Takes 1 integer as an argument and searches the tree for a node with that value, then traverses down its right subtree until it finds a <rightChild> leaf.
 - NumOfNodes -- Takes no arguments and only calls <CountNodes()>.
-- CountNodes -- Takes 1 RedBlackNode as an argument (which should always be the ROOT) and recursively traverses the tree counting each node and <strong>returns</strong> an integer
+- CountNodes -- Takes 1 RedBlackNode as an argument (which should always be the ROOT) and recursively traverses the tree counting each node and returns an integer
 - Rebalance -- Takes 1 RedBlackNode as an argument and checks whether a rule for Red-Black trees has been broken, then calls the function that fixes the tree.
 - ColorFlip -- Takes 1 RedBlackNode as an argument. Flips the grandparents color to RED and sets both of the grandparents children to BLACK.
 - LeftRightRotation -- Takes 1 RedBlackNode as an argument. Performs a left rotation then a right rotation. Further details within <Tree.cs>.
@@ -34,4 +35,11 @@ This program allows the user to create a Red-Black binary search tree of any siz
 - RightRotation -- Takes 1 RedBlackNode as an argument. Performs a right rotation. Furhter Details within <Tree.cs>.
 - Search -- Takes 1 integer as an argument. Calls <FindMin()> and <FindMax()> with the given value, times the search process and outputs the result, including the time to the console.
  
- 
+#### Program
+- CreateRandomArray -- Takes 1 integer as an argument and returns an array filled with unique numbers the size of the argument given.
+
+## Notes
+If you wish to actually run this program, please be aware that in Program.cs under the <main> function there is a FOREACH loops that prints the <randomUniqueArray> to the console. If my formatting is hard to read, try changing <typeWriterReturn> to a different value. I foudn this small edition helped me quickly skim over the output when comparing it to the <InOrder> output below it.
+
+### Potential Improvements
+When I was initially writing this application and leanring about Red-Black binary trees I foudn it very difficult to keep track of what exactly each rotation does step-by-step. While doing some research I saw a very nice visualization tool using WinForms that made it much easier to udnerstand. If I was going to take this project further I would create some sort of animation within WinForms that allows the user to do one of two things, watch the tree being made step-by-step node-by-node, or let them skip the whole process and see a fully realized tree. While I am experiences with WinForms to some extent, doing soemthing similiar with Python and a data visualizer seems more efficient. However, after gaining soem more experience i may come back to this project and see if I can make it even better!
