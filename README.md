@@ -45,4 +45,5 @@ If you wish to actually run this program, please be aware that in "Program.cs" u
 When I was initially writing this application and learning about Red-Black binary trees I found it very difficult to keep track of what exactly each rotation does step-by-step. While doing some research I saw a very nice visualization tool using WinForms that made it much easier to understand. If I was going to take this project further I would create some sort of animation within WinForms that allows the user to do one of two things: 
 - Watch the tree being made step-by-step node-by-node
 - Let the user skip the whole process and see a fully realized tree. 
+
 While I am experiences with WinForms to some extent, doing something similiar with Python and a data visualizer seems more efficient. However, after gaining some more experience I may come back to this project and see if I can make it even better!
