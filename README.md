@@ -28,7 +28,7 @@ This program allows the user to create a Red-Black binary search tree of any siz
 - NumOfNodes -- Takes no arguments and only calls <CountNodes()>.
 - CountNodes -- Takes 1 RedBlackNode as an argument (which should always be the ROOT) and recursively traverses the tree counting each node and returns an integer
 - Rebalance -- Takes 1 RedBlackNode as an argument and checks whether a rule for Red-Black trees has been broken, then calls the function that fixes the tree.
-- ColorFlip -- Takes 1 RedBlackNode as an argument. Flips the grandparents color to RED and sets both of the grandparents children to BLACK.
+- ColorFlip -- Takes 1 RedBlackNode as an argument. Flips the grandparent's color to RED and sets both of the grandparents children to BLACK.
 - LeftRightRotation -- Takes 1 RedBlackNode as an argument. Performs a left rotation then a right rotation. Further details within <Tree.cs>.
 - RightLeftRotation -- Takes 1 RedBlackNode as an argument. Performs a right rotation then a left rotation. Furhter Details within <Tree.cs>.
 - LeftRotation -- Takes 1 RedBlackNode as an argument. Performs a left rotation. Furhter Details within <Tree.cs>.
