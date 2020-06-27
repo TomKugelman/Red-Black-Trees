@@ -31,8 +31,8 @@ This program allows the user to create a Red-Black binary search tree of any siz
 - ColorFlip -- Takes 1 RedBlackNode as an argument. Flips the grandparent's color to RED and sets both of the grandparents children to BLACK.
 - LeftRightRotation -- Takes 1 RedBlackNode as an argument. Performs a left rotation then a right rotation. Further details within <Tree.cs>.
 - RightLeftRotation -- Takes 1 RedBlackNode as an argument. Performs a right rotation then a left rotation. Further Details within <Tree.cs>.
-- LeftRotation -- Takes 1 RedBlackNode as an argument. Performs a left rotation. Furhter Details within <Tree.cs>.
-- RightRotation -- Takes 1 RedBlackNode as an argument. Performs a right rotation. Furhter Details within <Tree.cs>.
+- LeftRotation -- Takes 1 RedBlackNode as an argument. Performs a left rotation. Further Details within <Tree.cs>.
+- RightRotation -- Takes 1 RedBlackNode as an argument. Performs a right rotation. Further Details within <Tree.cs>.
 - Search -- Takes 1 integer as an argument. Calls <FindMin()> and <FindMax()> with the given value, times the search process and outputs the result, including the time to the console.
  
 #### Program
