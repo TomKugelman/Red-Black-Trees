@@ -46,4 +46,4 @@ When I was initially writing this application and learning about Red-Black binar
 - Watch the tree being made step-by-step node-by-node
 - Let the user skip the whole process and see a fully realized tree. 
 
-While I am experiences with WinForms to some extent, doing something similiar with Python and a data visualizer seems more efficient. However, after gaining some more experience I may come back to this project and see if I can make it even better!
+While I am experienced with WinForms to some extent, doing something similiar with Python and a data visualizer seems more efficient. However, after gaining some more experience I may come back to this project and see if I can make it even better!
