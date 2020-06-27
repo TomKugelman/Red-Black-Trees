@@ -33,7 +33,7 @@ This program allows the user to create a Red-Black binary search tree of any siz
 - RightLeftRotation -- Takes 1 RedBlackNode as an argument. Performs a right rotation then a left rotation. Further Details within <Tree.cs>.
 - LeftRotation -- Takes 1 RedBlackNode as an argument. Performs a left rotation. Further Details within <Tree.cs>.
 - RightRotation -- Takes 1 RedBlackNode as an argument. Performs a right rotation. Further Details within <Tree.cs>.
-- Search -- Takes 1 integer as an argument. Calls <FindMin()> and <FindMax()> with the given value, times the search process and outputs the result, including the time to the console.
+- Search -- Takes 1 integer as an argument. Calls <FindMin()> and <FindMax()> with the given value, times the search process and outputs the results.
  
 #### Program
 - CreateRandomArray -- Takes 1 integer as an argument and returns an array filled with unique numbers the size of the argument given.
